@@ -4,6 +4,7 @@ const os = require("os")
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 cmd({
     pattern: "alive",
+    alias: "bot", 
     desc: "Check bot online or no.",
     category: "main",
     filename: __filename
@@ -20,7 +21,7 @@ reply(`${e}`)
 //============ping=======
 cmd({
     pattern: "ping",
-    react: "⚡",
+    react: "📍",
     alias: ["speed"],
     desc: "Check bot\'s ping",
     category: "main",
@@ -73,11 +74,11 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 let madeMenu = `
 👋 𝐇𝐄𝐋𝐋𝐎, ${pushname}!
 
-✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 your bot name ✨ 
+🙂 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 NIMSARA-MD WH BOT 
 ╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」
-│◈ яυηтιмє * ${runtime(process.uptime())}
-│◈ σωηєя ηαмє * your name
-│◈ σωηєя ηυмвєя * your number 
+│◈ яυηтιмє :- ${runtime(process.uptime())}
+│◈ σωηєя ηαмє :- *R.RAJINDU NIMSARA*
+│◈ σωηєя ηυмвєя :- *94766351670* 
 ╰──────────●●►
 ╭──────────●●►
  📥 *𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐌𝐞𝐧𝐮*
@@ -130,9 +131,10 @@ let madeMenu = `
  ${menu.tools}
 ╰───────────●●►
 
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ your bot name*`
+> CREATED BY MR.RAJINDU NIMSARA 
+> ㋛ 𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘 𝐍𝐈𝐌𝐒𝛥𝐑𝛥 〽️`
 
-return await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/de82e3.jpg`},caption:madeMenu},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/5x5pG4X3/SulaMd.jpg`},caption:madeMenu},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`𝔼𝕣𝕣𝕣𝕠𝕣`)
