@@ -11,7 +11,7 @@ let baseUrl;
 })();
 
 
-const yourName = "> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*";
+const yourName = "> ㋛ 𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘 𝐍𝐈𝐌𝐒𝛥𝐑𝛥 〽️";
 
 //twitter dl (x)
 cmd({
@@ -19,7 +19,7 @@ cmd({
     alias: ["twdl"],
     desc: "download tw videos",
     category: "download",
-    react: "🔎",
+    react: "📥",
     filename: __filename
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -45,7 +45,7 @@ cmd({
     alias: ["googledrive"],
     desc: "download gdrive files",
     category: "download",
-    react: "🔎",
+    react: "📥",
     filename: __filename
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -67,7 +67,7 @@ cmd({
     alias: ["mfire"],
     desc: "download mfire files",
     category: "download",
-    react: "🔎",
+    react: "📥",
     filename: __filename
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
