@@ -11,7 +11,17 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
+return await conn.sendMessage(from, {
+        image: { url: config.ALIVE_IMG },
+        caption: config.ALIVE_MSG,
+        voice: {url: config.ALIVE_VOICE },
+        buttons: [
+            { buttonId: ".menu", buttonText: { displayText: "📜 MENU" }, type: 1 },
+            { buttonId: ".ping", buttonText: { displayText: "🚀 PING" }, type: 1 }
+        ],
+        headerType: 4
+    }, { quoted: mek});
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
